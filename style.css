@@ -1,0 +1,92 @@
+/* general css */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+     background-color: #F1F5F8; 
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+button{
+    font-family: inherit;
+}
+
+/* main style css */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFF;
+    padding: 1rem 22rem;
+}
+.list{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.container-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    gap :30px;
+}
+
+.title-nav-bar{
+    color: #5AA6E9;
+    font-weight: 400;
+}
+/* button */
+.btn-primary{
+    display: inline-block;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid #222222;
+    border-radius: 0.2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #222222;
+    font-weight: 200;
+   
+}
+.btn-primary:hover{
+  background-color:#222222;
+  transition: all 0.9s ease-in-out;
+  color: #FFF;
+}
+.links:hover{
+    color: #5AA6E9;
+}
+
+.backround-text{
+    color: #fff;
+    background-color: #222222;
+    font-size: 2.7rem;
+    padding: 2rem;
+    border-radius: 0.3rem;
+}
+.change-color{
+    color: #5AA6E9;
+}
+
+@media(max-width:670px){
+    .navbar{
+        padding: 1rem 4rem;
+    }
+    .backround-text{
+       font-size: 2rem;
+    }
+}
